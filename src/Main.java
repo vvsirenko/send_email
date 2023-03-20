@@ -21,7 +21,7 @@ public class Main {
 
         boolean is_not_reachable;
         Date old_date = new Date();
-        String ip_server = "192.168.1.102";
+        String ip_server = args[3];
         is_not_reachable = checkIpStatus(ip_server);
 
         while (true){
