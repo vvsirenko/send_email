@@ -29,8 +29,7 @@ public class Main {
             long duration  = new_date.getTime() - old_date.getTime();
             long diffInMinutes = TimeUnit.MILLISECONDS.toMinutes(duration);
 
-            if (diffInMinutes > 1){
-                System.out.println("Ok " + new_date);
+            if (diffInMinutes > 10){
                 if (is_not_reachable) {
                     System.out.println(is_not_reachable + " " + old_date);
                     sendMail(SMTP_SERVER_HOST, SMTP_SERVER_PORT, FROM_USER_EMAIL, FROM_USER_ACCESSTOKEN,
